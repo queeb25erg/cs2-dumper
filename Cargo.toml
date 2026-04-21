@@ -32,3 +32,5 @@ opt-level = 3
 [profile.release]
 lto = true
 strip = true
+# Optimize for speed over size (personal preference)
+codegen-units = 1
