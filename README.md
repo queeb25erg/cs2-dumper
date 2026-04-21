@@ -9,6 +9,8 @@ outdated).
 For a work-in-progress offline version, check out the [cs2-analyzer](https://github.com/a2x/cs2-analyzer) repository or
 view its included web demo [here](https://a2x.github.io/cs2-analyzer).
 
+> **Personal fork note:** I primarily use this on Linux with memflow-native. The steps below reflect that workflow.
+
 ## Getting Started
 
 You can download the latest release from [Releases](https://github.com/a2x/cs2-dumper/releases) or compile it yourself.
@@ -36,7 +38,7 @@ Linux or as an administrator on Windows.
 
 - `-c, --connector <connector>`: The name of the memflow connector to use.
 - `-a, --connector-args <connector-args>`: Additional arguments to pass to the memflow connector.
-- `-f, --file-types <file-types>`: The types of files to generate. Default: `cs`, `hpp`,  `json`, `rs`, `zig`.
+- `-f, --file-types <file-types>`: The types of files to generate. Default: `json`, `rs` (I only generate these two for my use case).
 - `-i, --indent-size <indent-size>`: The number of spaces to use per indentation level. Default: `4`.
 - `-o, --output <output>`: The output directory to write the generated files to. Default: `output`.
 - `-p, --process-name <process-name>`: The name of the game process. Default: `cs2.exe`.
