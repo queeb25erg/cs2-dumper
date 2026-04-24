@@ -46,6 +46,16 @@ Linux or as an administrator on Windows.
 - `-h, --help`: Print help.
 - `-V, --version`: Print version.
 
+### My Typical Command
+
+On Linux with memflow-native (no connector needed), I usually run:
+
+```bash
+sudo cs2-dumper -f json rs -o output -vv
+```
+
+This generates only JSON and Rust files with verbose logging, which is enough for my personal use.
+
 ## Running Tests
 
 To run the few basic provided tests, use the following command: `cargo test -- --nocapture`.
