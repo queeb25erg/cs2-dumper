@@ -29,6 +29,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 17
+        // Note: SeqCmd values map directly to the animation blend tree evaluation order
         public enum SeqCmd_t : uint {
             SeqCmd_Nop = 0x0,
             SeqCmd_LinearDelta = 0x1,
@@ -75,6 +76,7 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 1
         // Member count: 3
+        // Note: byte-sized enum (alignment 1) - used in transition graph hot paths, keep small
         public enum NmTransitionRule_t : byte {
             AllowTransition = 0x0,
             ConditionallyAllowTransition = 0x1,
@@ -82,10 +84,4 @@ namespace CS2Dumper.Schemas {
         }
         // Alignment: 4
         // Member count: 3
-        public enum BinaryNodeTiming : uint {
-            UseChild1 = 0x0,
-            UseChild2 = 0x1,
-            SyncChildren = 0x2
-        }
-        // Alignment: 1
-        // Me
+     
